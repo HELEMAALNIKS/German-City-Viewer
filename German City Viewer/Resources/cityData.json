@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Berlin",
+        "category": "Featured",
+        "state": "Berlin",
+        "id": 1001,
+        "population": "3.644.826",
+        "coordinates": {
+            "longitude": 13.4097,
+            "latitude": 52.5176
+        },
+        "imageName": "berlin"
+    },
+    {
+        "name": "Hamburg",
+        "category": "Featured",
+        "state": "Hamburg",
+        "id": 1002,
+        "population": "1.841.179",
+        "coordinates": {
+            "longitude": 9.9930,
+            "latitude": 53.5500
+        },
+        "imageName": "hamburg"
+    },
+    {
+        "name": "München",
+        "category": "Featured",
+        "state": "Bayern",
+        "id": 1003,
+        "population": "1.471.508",
+        "coordinates": {
+            "longitude": 11.5845,
+            "latitude": 48.1382
+        },
+        "imageName": "munchen"
+    },
+    {
+        "name": "Köln",
+        "category": "Featured",
+        "state": "Nordrhein-Westfalen",
+        "id": 1004,
+        "population": "1.085.664",
+        "coordinates": {
+            "longitude": 6.9554,
+            "latitude": 50.9426
+        },
+        "imageName": "koln"
+    },
+    {
+        "name": "Frankfurt am Main",
+        "category": "Featured",
+        "state": "Hessen",
+        "id": 1005,
+        "population": "753.056",
+        "coordinates": {
+            "longitude": 8.6880,
+            "latitude": 50.1125
+        },
+        "imageName": "frankfurtammain"
+    },
+    {
+        "name": "Suttgart",
+        "category": "Featured",
+        "state": "Baden-Württemberg",
+        "id": 1006,
+        "population": "634.830",
+        "coordinates": {
+            "longitude": 9.1776,
+            "latitude": 48.7752
+        },
+        "imageName": "stuttgart"
+    },
+    {
+        "name": "Düsseldorf",
+        "category": "Featured",
+        "state": "Nordrhein-Westfalen",
+        "id": 1007,
+        "population": "619.294",
+        "coordinates": {
+            "longitude": 6.7821,
+            "latitude": 51.2423
+        },
+        "imageName": "dusseldorf"
+    }
+]
