@@ -13,9 +13,3 @@ struct About: View {
         Text("Made by Jaron Hoste :)")
     }
 }
-
-struct About_Previews: PreviewProvider {
-    static var previews: some View {
-        About()
-    }
-}

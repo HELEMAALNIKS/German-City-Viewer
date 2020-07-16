@@ -15,7 +15,7 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
     }
-
+    //Create a map view based on the city
     func updateUIView(_ uiView: MKMapView, context: Context) {
         let span = MKCoordinateSpan(latitudeDelta: 0.6, longitudeDelta: 0.6)
         let region = MKCoordinateRegion(center: coordinate, span: span)
@@ -23,8 +23,3 @@ struct MapView: UIViewRepresentable {
     }
 }
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView(coordinate: cityData[0].locationCoordinate)
-    }
-}

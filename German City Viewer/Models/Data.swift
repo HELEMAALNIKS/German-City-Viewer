@@ -1,30 +1,40 @@
-import UIKit
 import SwiftUI
 import CoreLocation
 
-let cityData: [City] = load("cityData.json")
+public class CityFetcher: ObservableObject {
 
-func load<T: Decodable>(_ filename: String) -> T {
-    let data: Data
+    @Published var cities = [City]()
     
-    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    init(){
+        load()
     }
     
-    do {
-        data = try Data(contentsOf: file)
-    } catch {
-        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-    }
+    func load() {
+        //Define URL where JSON is located
+        let url = URL(string: "https://raw.githubusercontent.com/HELEMAALNIKS/German-City-Viewer/master/German%20City%20Viewer/Resources/cityData.json")!
     
-    do {
-        let decoder = JSONDecoder()
-        return try decoder.decode(T.self, from: data)
-    } catch {
-        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+        URLSession.shared.dataTask(with: url) {(data,response,error) in
+            do {
+                if let d = data {
+                    //Decode JSON
+                    let decodedLists = try JSONDecoder().decode([City].self, from: d)
+                    DispatchQueue.main.async {
+                        self.cities = decodedLists
+                    }
+                } else {
+                    //Print if data is empty
+                    print("No Data")
+                }
+            } catch {
+                //Print if data is invalid
+                print ("Error")
+            }
+            
+        }.resume()
+         
     }
 }
+
 
 final class ImageStore {
     typealias _ImageDictionary = [String: CGImage]
@@ -33,7 +43,7 @@ final class ImageStore {
     fileprivate static var scale = 2
     
     static var shared = ImageStore()
-    //Constante
+    //Constant, because the function will never change
     
     func image(name: String) -> Image {
         let index = _guaranteeImage(name: name)

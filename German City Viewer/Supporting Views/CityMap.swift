@@ -10,6 +10,9 @@ import SwiftUI
 import MapKit
 
 struct CityMap: UIViewRepresentable {
+    //Define where the fetched data is coming from
+    @ObservedObject var fetcher = CityFetcher()
+
     var mapView: MKMapView!
     
   var locationManager = CLLocationManager()
@@ -19,15 +22,13 @@ struct CityMap: UIViewRepresentable {
     locationManager.requestAlwaysAuthorization()
   }
     
-    
-  
   func makeUIView(context: Context) -> MKMapView {
     setupManager()
     let mapView = MKMapView(frame: UIScreen.main.bounds)
     mapView.showsUserLocation = true
     mapView.userTrackingMode = .follow
     
-    for city in cityData {
+    for city in fetcher.cities {
         let annotations = MKPointAnnotation()
         annotations.title = city.name
         annotations.coordinate = CLLocationCoordinate2D(latitude:
@@ -44,7 +45,6 @@ struct CityMap: UIViewRepresentable {
       uiView.setRegion(region, animated: true)
   }
 }
-
 
 struct CityMap_Previews: PreviewProvider {
   static var previews: some View {

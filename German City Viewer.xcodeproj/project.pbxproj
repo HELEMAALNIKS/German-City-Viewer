@@ -12,10 +12,6 @@
 		9A665F4524473EC500962149 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A665F4424473EC500962149 /* Settings.bundle */; };
 		9A665F472447563C00962149 /* CityPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A665F462447563C00962149 /* CityPin.swift */; };
 		9A665F4D2447820B00962149 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A665F4C2447820B00962149 /* About.swift */; };
-		9AA6ECCA2449B901001E60D5 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6ECC92449B901001E60D5 /* WeatherView.swift */; };
-		9AA6ECCC2449B9BF001E60D5 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6ECCB2449B9BF001E60D5 /* Weather.swift */; };
-		9AA6ECCE2449BD97001E60D5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6ECCD2449BD97001E60D5 /* Webservice.swift */; };
-		9AA6ECD12449C238001E60D5 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6ECD02449C238001E60D5 /* WeatherListViewModel.swift */; };
 		9AB7F2AF2444B07300E80A0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7F2AE2444B07300E80A0F /* AppDelegate.swift */; };
 		9AB7F2B12444B07300E80A0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7F2B02444B07300E80A0F /* SceneDelegate.swift */; };
 		9AB7F2B32444B07300E80A0F /* CityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7F2B22444B07300E80A0F /* CityDetail.swift */; };
@@ -23,7 +19,6 @@
 		9AB7F2B82444B07500E80A0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2B72444B07500E80A0F /* Preview Assets.xcassets */; };
 		9AB7F2BB2444B07500E80A0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2B92444B07500E80A0F /* LaunchScreen.storyboard */; };
 		9AB7F2E72444B28E00E80A0F /* berlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2DF2444B28D00E80A0F /* berlin.jpg */; };
-		9AB7F2E82444B28E00E80A0F /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2E02444B28D00E80A0F /* cityData.json */; };
 		9AB7F2E92444B28E00E80A0F /* dusseldorf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2E12444B28D00E80A0F /* dusseldorf.jpg */; };
 		9AB7F2EA2444B28E00E80A0F /* koln.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2E22444B28D00E80A0F /* koln.jpg */; };
 		9AB7F2EB2444B28E00E80A0F /* munchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB7F2E32444B28E00E80A0F /* munchen.jpg */; };
@@ -61,10 +56,7 @@
 		9A665F4424473EC500962149 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		9A665F462447563C00962149 /* CityPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityPin.swift; sourceTree = "<group>"; };
 		9A665F4C2447820B00962149 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; usesTabs = 0; };
-		9AA6ECC92449B901001E60D5 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
-		9AA6ECCB2449B9BF001E60D5 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		9AA6ECCD2449BD97001E60D5 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
-		9AA6ECD02449C238001E60D5 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		9A89412324AB4CEB009D493C /* thuis.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = thuis.gpx; sourceTree = "<group>"; };
 		9AB7F2AB2444B07300E80A0F /* City Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB7F2AE2444B07300E80A0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB7F2B02444B07300E80A0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +68,6 @@
 		9AB7F2C12444B07500E80A0F /* German City ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "German City ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB7F2CC2444B07500E80A0F /* German City ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "German City ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB7F2DF2444B28D00E80A0F /* berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berlin.jpg; sourceTree = "<group>"; };
-		9AB7F2E02444B28D00E80A0F /* cityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityData.json; sourceTree = "<group>"; };
 		9AB7F2E12444B28D00E80A0F /* dusseldorf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dusseldorf.jpg; sourceTree = "<group>"; };
 		9AB7F2E22444B28D00E80A0F /* koln.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = koln.jpg; sourceTree = "<group>"; };
 		9AB7F2E32444B28E00E80A0F /* munchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = munchen.jpg; sourceTree = "<group>"; };
@@ -116,17 +107,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9AA6ECCF2449C228001E60D5 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				9AA6ECD02449C238001E60D5 /* WeatherListViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
 		9AB7F2A22444B07300E80A0F = {
 			isa = PBXGroup;
 			children = (
+				9A89412324AB4CEB009D493C /* thuis.gpx */,
 				9AB7F2AD2444B07300E80A0F /* German City Viewer */,
 				9AB7F2AC2444B07300E80A0F /* Products */,
 			);
@@ -145,13 +129,11 @@
 		9AB7F2AD2444B07300E80A0F /* German City Viewer */ = {
 			isa = PBXGroup;
 			children = (
-				9AA6ECCF2449C228001E60D5 /* View Models */,
 				9AB7F2F82444B3B000E80A0F /* Models */,
 				9AB7F2AE2444B07300E80A0F /* AppDelegate.swift */,
 				9AB7F2B02444B07300E80A0F /* SceneDelegate.swift */,
 				9AB7F2B22444B07300E80A0F /* CityDetail.swift */,
 				9A3551182444EEA600C00791 /* ContentView.swift */,
-				9A665F4C2447820B00962149 /* About.swift */,
 				9AB7F2DE2444B27500E80A0F /* Resources */,
 				9AB7F2EF2444B2A600E80A0F /* Supporting Views */,
 				9AB7F2B42444B07500E80A0F /* Assets.xcassets */,
@@ -179,7 +161,6 @@
 				9AB7F2E62444B28E00E80A0F /* frankfurtammain.jpg */,
 				9AB7F2E52444B28E00E80A0F /* hamburg.jpg */,
 				9AB7F2E22444B28D00E80A0F /* koln.jpg */,
-				9AB7F2E02444B28D00E80A0F /* cityData.json */,
 				9AB7F2E32444B28E00E80A0F /* munchen.jpg */,
 				9AB7F2E42444B28E00E80A0F /* stuttgart.jpg */,
 			);
@@ -195,7 +176,7 @@
 				9AB7F2F62444B33000E80A0F /* CityList.swift */,
 				9A3551142444ED3D00C00791 /* CityMap.swift */,
 				9A665F462447563C00962149 /* CityPin.swift */,
-				9AA6ECC92449B901001E60D5 /* WeatherView.swift */,
+				9A665F4C2447820B00962149 /* About.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -205,8 +186,6 @@
 			children = (
 				9AB7F2FD2444B3E400E80A0F /* Data.swift */,
 				9AB7F2FC2444B3E400E80A0F /* City.swift */,
-				9AA6ECCB2449B9BF001E60D5 /* Weather.swift */,
-				9AA6ECCD2449BD97001E60D5 /* Webservice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,7 +300,6 @@
 				9AB7F2EE2444B28E00E80A0F /* frankfurtammain.jpg in Resources */,
 				9A665F4524473EC500962149 /* Settings.bundle in Resources */,
 				9AB7F2B82444B07500E80A0F /* Preview Assets.xcassets in Resources */,
-				9AB7F2E82444B28E00E80A0F /* cityData.json in Resources */,
 				9AB7F2E92444B28E00E80A0F /* dusseldorf.jpg in Resources */,
 				9AB7F2ED2444B28E00E80A0F /* hamburg.jpg in Resources */,
 				9AB7F2EC2444B28E00E80A0F /* stuttgart.jpg in Resources */,
@@ -355,14 +333,10 @@
 				9A3551192444EEA600C00791 /* ContentView.swift in Sources */,
 				9AB7F2F12444B2BC00E80A0F /* CircleImage.swift in Sources */,
 				9AB7F2F32444B2EB00E80A0F /* MapView.swift in Sources */,
-				9AA6ECCC2449B9BF001E60D5 /* Weather.swift in Sources */,
-				9AA6ECD12449C238001E60D5 /* WeatherListViewModel.swift in Sources */,
 				9A665F4D2447820B00962149 /* About.swift in Sources */,
-				9AA6ECCA2449B901001E60D5 /* WeatherView.swift in Sources */,
 				9AB7F2FE2444B3E400E80A0F /* City.swift in Sources */,
 				9AB7F2B12444B07300E80A0F /* SceneDelegate.swift in Sources */,
 				9AB7F2F72444B33000E80A0F /* CityList.swift in Sources */,
-				9AA6ECCE2449BD97001E60D5 /* Webservice.swift in Sources */,
 				9AB7F2B32444B07300E80A0F /* CityDetail.swift in Sources */,
 				9A665F472447563C00962149 /* CityPin.swift in Sources */,
 				9A3551152444ED3D00C00791 /* CityMap.swift in Sources */,

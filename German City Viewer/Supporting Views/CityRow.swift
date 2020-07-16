@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct CityRow: View {
-    
+//Define where the fetched data is coming from
+@ObservedObject var fetcher = CityFetcher()
+    //Creat a little card with image for each city
     var city: City
-    
     var body: some View {
         
         HStack {
@@ -25,14 +26,4 @@ struct CityRow: View {
     }
 }
 
-struct CityRow_Previews:
-    PreviewProvider {
-    static var previews: some View {
-        Group {
-            CityRow(city: cityData[1])
-            CityRow(city: cityData[0])
-        }
-        .previewLayout(.fixed(width: 300, height: 70))
 
-    }
-}

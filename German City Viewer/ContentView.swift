@@ -12,7 +12,9 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
+        //This defines all the buttons on the bottom screen
         TabView(selection: $selection){
+            //Show CityList with name and icon
             CityList()
                 .tabItem {
                     VStack {
@@ -21,6 +23,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
+            //Show CityMap with name and icon
             CityMap()
                 .edgesIgnoringSafeArea(.all)
                 .font(.title)
@@ -31,6 +34,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
+            //Show About with name and icon
             About()
                 .tabItem {
                     VStack {

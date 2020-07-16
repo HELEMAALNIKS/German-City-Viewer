@@ -8,10 +8,17 @@
 
 import SwiftUI
 
+import Foundation
+import Combine
+
+
 struct CityList: View {
+    //Define where the fetched data is coming from
+    @ObservedObject var fetcher = CityFetcher()
     var body: some View {
         NavigationView {
-            List(cityData) { city in
+            //Loop trough cities and display them in a list
+            List(fetcher.cities) { city in
                 NavigationLink(destination: CityDetail(city: city)) {
                     CityRow(city: city)
                 }

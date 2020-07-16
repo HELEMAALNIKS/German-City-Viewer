@@ -1,6 +1,7 @@
 import SwiftUI
 import CoreLocation
 
+//Define all data that is loaded from the JSON
 struct City: Hashable, Codable, Identifiable {
     var id: Int
     var name: String

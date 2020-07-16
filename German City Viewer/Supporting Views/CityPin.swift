@@ -10,13 +10,17 @@ import SwiftUI
 import MapKit
 
 struct CityPin: View {
+    //Define where the fetched data is coming from
+    @ObservedObject var fetcher = CityFetcher()
     var city: City
     
     
     func fetchCityLocations(_ city: [City]) {
-      for city in cityData {
+        //Loop trough all the cities in the JSON file and place the coordinates with pins on the map
+        for city in fetcher.cities {
         let mapView = MKMapView(frame: UIScreen.main.bounds)
         let annotations = MKPointAnnotation()
+        //Define annotations
         annotations.title = city.name
         annotations.coordinate = CLLocationCoordinate2D(latitude:
             city.locationCoordinate.latitude, longitude: city.locationCoordinate.longitude)
@@ -28,23 +32,9 @@ struct CityPin: View {
         
         HStack {
             city.image
-//                .resizable()
-//                .frame(width: 50, height: 50)
             Text(city.population)
             Spacer()
         }
         
-    }
-}
-
-struct CityPin_Previews:
-    PreviewProvider {
-    static var previews: some View {
-        Group {
-            CityRow(city: cityData[1])
-            CityRow(city: cityData[0])
-        }
-        .previewLayout(.fixed(width: 300, height: 70))
-
     }
 }
